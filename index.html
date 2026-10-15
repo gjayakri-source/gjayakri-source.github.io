@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gautham Jayakrishnan | Security Engineer</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1.5rem;
+        }
+        h1 { font-size: 2.25rem; font-weight: 700; color: var(--text-main); }
+        .subtitle { font-size: 1.2rem; color: var(--accent); margin-top: 0.5rem; }
+        .contact-info {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-top: 0.75rem;
+        }
+        .contact-info a { color: var(--accent); text-decoration: none; margin-right: 1rem; }
+        .contact-info a:hover { text-decoration: underline; }
+        section { margin-bottom: 2.5rem; }
+        h2 { font-size: 1.4rem; color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.3rem; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+        }
+        .skill-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        .skill-card h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--text-main); }
+        .skill-card p { font-size: 0.9rem; color: var(--text-muted); }
+        .job, .project {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .job-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .job-title, .project-title { font-weight: 600; font-size: 1.05rem; }
+        .job-date, .job-location { font-size: 0.85rem; color: var(--text-muted); }
+        ul { list-style-type: disc; margin-left: 1.2rem; margin-top: 0.5rem; }
+        li { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0.3rem; }
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            padding-top: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Gautham Jayakrishnan</h1>
+            <div class="subtitle">Security Engineer & MS CS Student at Arizona State University</div>
+            <div class="contact-info">
+                <span>Tempe, AZ</span>
+                <a href="mailto:gjayakri@asu.edu">gjayakri@asu.edu</a>
+                <span>623-986-3508</span>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <!-- Technical Skills -->
+        <section>
+            <h2>Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>AI & Infrastructure</h3>
+                    <p>AMD ROCm Ecosystem, vLLM, ReAct Architecture, Model Context Protocol (MCP)</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Cloud Security</h3>
+                    <p>AWS (EC2, S3, SQS, Lambda, CloudWatch), GCP, VPC Service Controls, IAM</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Languages & Scripting</h3>
+                    <p>Python, Java, Bash/Shell, C, Assembly (x86), AWS CDK, REST APIs</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Threat Intelligence</h3>
+                    <p>Diamond Model, MITRE ATT&CK, CrowdStrike Falcon, Metasploit, IDA Pro</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2>Professional Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Security Engineer (Part-Time)</span>
+                    <span class="job-date">July 2026 – Present</span>
+                </div>
+                <div class="job-header">
+                    <span class="job-location">QWERX (Remote, USA)</span>
+                </div>
+                <ul>
+                    <li>Designing and implementing a physical entropy source to produce high-quality, truly random seed material for ephemeral key-generation mechanisms[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Threat Intelligence Analyst Intern</span>
+                    <span class="job-date">September 2025 – December 2025</span>
+                </div>
+                <div class="job-header">
+                    <span class="job-location">Bayer (Remote)</span>
+                </div>
+                <ul>
+                    <li>Built 'Cast Insight,' an end-to-end AWS pipeline using EC2, Lambda, SQS, Bedrock/Titan, OpenSearch Serverless, and SES to process podcast files and deliver threat-context insights via an MCP server[cite: 1].</li>
+                    <li>Explored integration of the Diamond Model with threat intelligence platforms like CrowdStrike Falcon and Recorded Future to enrich analysis[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <span class="job-title">Product Security Intern</span>
+                    <span class="job-date">January 2023 – June 2023</span>
+                </div>
+                <div class="job-header">
+                    <span class="job-location">Honeywell (Bengaluru, India)</span>
+                </div>
+                <ul>
+                    <li>Automated tasks for Security Architects using Python, reducing vulnerability closure workload by up to 90% via JIRA and Blackduck Hub REST APIs[cite: 1].</li>
+                    <li>Addressed evolving security threats with container-level security tools and secure SDLC practices[cite: 1].</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Featured Projects</h2>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">Autonomous SecOps Incident Response Framework</span>
+                </div>
+                <ul>
+                    <li>Engineered an autonomous AI Security Agent using Python and the Google Gemini API via the ReAct framework for real-time incident analysis[cite: 1].</li>
+                    <li>Designed secure APIs, system prompts, and JSON-schema-based function calling to safely interact with security tools[cite: 1].</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <span class="project-title">VT-x Hypervisor Introspection Engine</span>
+                </div>
+                <ul>
+                    <li>Developed a Type-1 bare-metal hypervisor as a Linux Kernel Module utilizing Intel VT-x and Extended Page Tables (EPT) for out-of-guest memory introspection[cite: 1].</li>
+                    <li>Intercepted DKOM rootkits by hooking EPT permissions and streaming telemetry via a user-space Netlink socket[cite: 1].</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Gautham Jayakrishnan. Built for GitHub Pages.</p>
+        </footer>
+    </div>
+</body>
+</html>
